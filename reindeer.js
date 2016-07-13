@@ -1,10 +1,9 @@
 var colors = ["Blue", "Red", "Orange", "Purple", "Hazel", "Aquamarine", "Periwinkle", "Azure", "Fuchsia", "Chocolate", "Amber", "Amaranth"];
 var reindeer = ["Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"];
+var deerList = [];
 
-  for (var i = 0; i <= colors.length; i++) {
-    for (var j = 0; j <= reindeer.length; j++) {
-      console.log(colors[i++] + ' ' + reindeer[j++]);
-    }
-  }
+  var hohoho = document.getElementById("coloredReindeer");
 
-hohoho = document.getElementById("coloredReindeer");
+  for (var i = 0; i <= reindeer.length; i++) {
+    hohoho.innerHTML += "<div>" + colors[i] + " " + reindeer[i] + "<div>"
+  };
